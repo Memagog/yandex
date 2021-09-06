@@ -34,17 +34,343 @@
             --color-dark-gray: #666;
             --color-light-gray: #ccc;
             --color-accent: #0099cc;
-            --color-white: #fff;
+            --color-white: rgb(252, 175, 175);
             --color-background: rgba(0,0,0,0.05);
         }
     </style>
 </head>
 
-<body>
-    <!-- добавьте вёрстку -->
+<body class="grid">
+    <div class="container">
+        <div class="header">
+            <p>Магазин игрушек</p>
+        </div>
+        <div class="body">
+            <div class="body__filter">
+                <div class="filter-block">
+                    <p class="filter-list_label">
+                        Цвет
+                    </p>
+                    <ul class="filter-list">                        
+                        <li><input type="checkbox" name="filter">Белый</li>
+                        <li><input type="checkbox" name="filter">Синий</li>
+                        <li><input type="checkbox" name="filter">Красный</li>
+                        <li><input type="checkbox" name="filter">Желтый</li>
+                    </ul>
+                    <p class="filter-list_label">
+                        Размер
+                    </p>
+                    <ul class="filter-list">                       
+                        <li><input type="checkbox" name="filter">Большой</li>
+                        <li><input type="checkbox" name="filter">Маленький</li>
+                        <li><input type="checkbox" name="filter">Средний</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="body__content">
+                <div class="body__content_brend">
+                    <p class="brend">Мягкие игрушки</p>
+                    <br/>
+                    <p class="sub-brend">Все дети любят мягкие игрушки</p>
+                </div>
+                <div class="body__content_types">
+                    <div class="body__content_types_el">
+                        <a href="#">Котики</a>
+                        <p>Мяукают и ловят мышей</p>
+                    </div>
+                    <div class="body__content_types_el">
+                        <a href="#">Медведи</a>
+                        <p>Верные друзья</p>
+                    </div>
+                </div>
+                <div class="body__content_popular">
+                  <p>Популярные</p> 
+                </div>
+                
+                <div class="body__content_products_list">
+                        <div class="body__content_products_list-el">
+                               <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkMAYAADkANVKH3ScAAAAASUVORK5CYII=" alt="img" class="body__content_products_list-el_img"/> 
+                               <div class="body__content_products_list-el_buy-block">
+                                   <div class="buy-lebel">
+                                    <a href="#" >
+                                        Федор
+                                    <a> 
+                                   </div>
+                                                                                           
+                                    <button class="buy">
+                                        Купить
+                                    </button>
+                               </div>                                                        
+                        </div> 
+                        <div class="body__content_products_list-el">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkMAYAADkANVKH3ScAAAAASUVORK5CYII=" alt="img" class="body__content_products_list-el_img"/> 
+                            <div class="body__content_products_list-el_buy-block">
+                                <div class="buy-lebel">
+                                 <a href="#" >
+                                     Федор
+                                 <a> 
+                                </div>
+                                                                                        
+                                 <button class="buy">
+                                     Купить
+                                 </button>
+                            </div>                                                        
+                        </div>                  
+                        <div class="body__content_products_list-el">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkMAYAADkANVKH3ScAAAAASUVORK5CYII=" alt="img" class="body__content_products_list-el_img"/> 
+                            <div class="body__content_products_list-el_buy-block">
+                                <div class="buy-lebel">
+                                 <a href="#" >
+                                     Федор
+                                 <a> 
+                                </div>
+                                                                                        
+                                 <button class="buy">
+                                     Купить
+                                 </button>
+                            </div>                                                        
+                        </div>  
+                        <div class="body__content_products_list-el">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkMAYAADkANVKH3ScAAAAASUVORK5CYII=" alt="img" class="body__content_products_list-el_img"/> 
+                            <div class="body__content_products_list-el_buy-block">
+                                <div class="buy-lebel">
+                                 <a href="#" >
+                                     Федор
+                                 <a> 
+                                </div>
+                                                                                        
+                                 <button class="buy">
+                                     Купить
+                                 </button>
+                            </div>                                                        
+                        </div>                  
+                        <div class="body__content_products_list-el">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkMAYAADkANVKH3ScAAAAASUVORK5CYII=" alt="img" class="body__content_products_list-el_img"/> 
+                            <div class="body__content_products_list-el_buy-block">
+                                <div class="buy-lebel">
+                                 <a href="#" >
+                                     Федор
+                                 <a> 
+                                </div>
+                                                                                        
+                                 <button class="buy">
+                                     Купить
+                                 </button>
+                            </div>                                                        
+                        </div>
+                        <div class="body__content_products_list-el">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkMAYAADkANVKH3ScAAAAASUVORK5CYII=" alt="img" class="body__content_products_list-el_img"/> 
+                            <div class="body__content_products_list-el_buy-block">
+                                <div class="buy-lebel">
+                                 <a href="#" >
+                                     Федор
+                                 <a> 
+                                </div>
+                                                                                        
+                                 <button class="buy">
+                                     Купить
+                                 </button>
+                            </div>                                                        
+                        </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <p class="footer__contact">
+                Контакты
+            </p>
+            <p class="footer__info">
+                © 2021 Магазин игрушек
+            </p>
+        </footer>
+    </div>
 
     <style>
-        /* добавьте стили */
+        a{
+            color:#0099cc;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .grid{
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            max-width: 960px;
+            display: flex;
+            flex-direction: column;                     
+        }
+
+        .container .header{
+            width: 100%;
+            height: 60px;
+            background-color: #0099cc; 
+            font-size: 24px;   
+            color: white;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            padding-left: 12px;
+            /* font-weight: bold; */
+                   
+        }
+        /* Body */
+        .container .body{
+            width:  960px;
+            height: 468px;           
+            /* background-color: #ffffff; */
+            display: flex;
+            flex-direction: row;            
+            margin: 12px 0px 12px 0px;
+        }
+        .body__filter{
+            min-width: 240px;
+            height: 100%;
+            background-color: #ccc;           
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;  
+            padding-top: 12px;  
+            box-sizing: border-box; 
+            font-size: 16px;   
+            font-weight: 600;           
+            color: black;        
+        }
+        .filter-list{
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;    
+            text-align: left;
+            list-style: none;
+            padding-left: 24px;             
+            margin: 0;     
+        }
+        .filter-list_label{
+            padding-left: 12px;            
+            display: inline;
+            font-weight: bold;         
+        }
+        .body__content{  
+            width: 708px;            
+            margin-left: 12px;
+            display: flex;
+            flex-direction: column;                 
+        }
+        .body__content_brend{
+            height: 96px;
+            margin-bottom: 12px;            
+            box-sizing: border-box;              
+            padding: 12px 0px 0px 12px;         
+        }
+        .body__content_brend .brend {
+            display: inline;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .body__content_brend .sub-brend{
+            display: inline;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .body__content_types{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;           
+        }
+        .body__content_types_el{               
+            width: 348px;
+            height: 72px;
+            background-color: #ccc;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            box-sizing: border-box;
+                    
+        }
+        .body__content_types_el p{
+           position: relative;
+           display: inline;
+           color: #666;
+           font-weight: 400;
+           margin-top: 3px;  
+           margin-left: 12px;             
+        }
+        .body__content_types_el a{          
+           margin-top: 12px;  
+           margin-left: 12px;             
+        }
+        .body__content_popular{
+            height: 60px;
+            margin-bottom: 12px;
+            /* background-color: #ccc; */
+            display: flex;
+            align-items: center;
+            margin-top: 12px;                
+        }
+        .body__content_popular p{
+            display: inline;
+            font-size: 24px;
+            font-weight: 900;            
+            padding-left: 12px;            
+        }
+        .body__content_products_list{
+            width: 708px;
+            height: 192px;            
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            /* justify-content: space-between;        */
+        }
+        .body__content_products_list-el{            
+            width: 228px;
+            height: 84px; 
+            margin: 0px 12px 0px 0px;       
+            background-color: #ccc;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+            margin-bottom: 12px;
+            box-sizing: border-box;
+            padding: 12px;
+        }
+        .body__content_products_list:last-child{
+            background-color: #0099cc;
+        }
+        .body__content_products_list-el_img{
+            width: 60px;
+            height: 60px;
+        }
+        .body__content_products_list-el_buy-block{
+            display: flex;
+            flex-direction: column;
+            margin-left: 12px;    
+        }
+        .body__content_products_list-el .buy-lebel {          
+               width:72px;
+               height:24px;
+        }
+
+        .body__content_products_list-el .buy{
+            margin-top: 12px;
+            width: 72px;
+            height: 24px;
+        }
+        /* Footer Block */
+        .footer{ 
+            display: flex;
+            justify-content: space-between;
+            width: 960px;
+            height: 48px;            
+            background-color: #ccc;
+            align-items: center;
+        }
+
+        .footer p {
+            display: inline;
+            padding: 0 12px 0 12px;
+            color: #696969;
+        }
     </style>
 </body>
 
