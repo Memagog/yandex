@@ -62,15 +62,26 @@ solution(input).then(result => {
     }
 });
 
-async function solution(input) {      
-    await input.size((size)=>{
-        for (let i = 0; i < size; i++) {
-            input.read(i,(file)=>{
-                if(typeof(file) === "object" && file !== null && Object.keys(file).length !== 0){
-                    solution(file)
-                }
-                else if(typeof(file) === "string" && file !== "file") console.log(file)                                   
-            })                                 
-        }
-    })
+async function solution(input) {
+    let result = [];  
+    let recursionSearchFiles = (obj)=> {      
+        obj.size((size)=>{
+            for (let i = 0; i < size; i++) {
+                obj.read(i,(file)=>{
+                    if(typeof(file) === "object" && file !== null && Object.keys(file).length !== 0){
+                        recursionSearchFiles(file)                                                  
+                    }
+                    else if(typeof(file) === "string" && file !== "file") result.push(file)                                   
+                })                                 
+            }    
+        })
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+              resolve(result.sort());
+            }, 1000);
+        });
+    }      
+    await recursionSearchFiles(input) 
+    return result 
 }
+
